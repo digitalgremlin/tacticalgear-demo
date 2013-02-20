@@ -1,0 +1,7 @@
+{
+	"host_map": [
+		"$.tacticalgear.com => tacticalgear.com",
+		"$.tacticalgear.com => www.tacticalgear.com",
+		"$.news.tacticalgear.com => news.tacticalgear.com"
+	]
+}
