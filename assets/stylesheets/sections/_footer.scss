@@ -2,20 +2,43 @@ footer._footer {
 
 
 	._menuContainer h2{
-	@include background(linear-gradient($gray, $medium_gray));
+	@include bg-medium-gray;
 	padding:10px;
-	
+	margin:0px;
+	color:$dark_orange;
+
+	.menu-collapse{
+	float:right;
+	margin-right:5px;
+	}	
 	}
 
 	._subFootMenu{
-	@include background(linear-gradient($white, $light_gray));
-	padding:10px; }
+	@include bg-gray;
+	padding:10px; 
+	margin:0px;
+	color:#fff;
 
-	._subFootMenu + p a{
-	@include bg-blue-gray;
+	.menu-collapse{
+	float:right;
+	margin-right:5px;
+	}	
+	}
+	._subFootMenu + h3{
+	margin:0px;
+
+	
+	}
+	._subFootMenu + h4{
+	margin:0px;
+	 > a{
+	@include bg-light-gray;
 	padding:5px;
 	margin:0px;
 	display:block;
 	}
-	
+	.arrows-right_white_b{
+	float:right;
+	}
+	}
 }

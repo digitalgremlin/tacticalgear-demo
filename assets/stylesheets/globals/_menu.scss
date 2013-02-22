@@ -1,7 +1,7 @@
 $menu-url: url("/_moovweb_local_assets_/images/menu.png");
 
-$menu-width: 20px;
-$menu-height: 275px;
+$menu-width: 24px;
+$menu-height: 294px;
 
 $menu-arrow_right_blue-x: 0px;
 $menu-arrow_right_blue-y: 0px;
@@ -77,6 +77,11 @@ $menu-search-x: 0px;
 $menu-search-y: -260px;
 $menu-search-width: 16px;
 $menu-search-height: 15px;
+
+$menu-shopping-x: 0px;
+$menu-shopping-y: -276px;
+$menu-shopping-width: 24px;
+$menu-shopping-height: 18px;
 
 @mixin menu-arrow_right_blue() {
   background: url("/_moovweb_local_assets_/images/menu.png") no-repeat 0px 0px;
@@ -168,6 +173,12 @@ $menu-search-height: 15px;
   height: 15px;
 }
 
+@mixin menu-shopping() {
+  background: url("/_moovweb_local_assets_/images/menu.png") no-repeat 0px -276px;
+  width: 24px;
+  height: 18px;
+}
+
 .menu-arrow_right_blue {
   background: url("/_moovweb_local_assets_/images/menu.png") no-repeat 0px 0px;
   width: 8px;
@@ -256,4 +267,10 @@ $menu-search-height: 15px;
   background: url("/_moovweb_local_assets_/images/menu.png") no-repeat 0px -260px;
   width: 16px;
   height: 15px;
+}
+
+.menu-shopping {
+  background: url("/_moovweb_local_assets_/images/menu.png") no-repeat 0px -276px;
+  width: 24px;
+  height: 18px;
 }

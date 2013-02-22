@@ -11,6 +11,7 @@ $("./body") {
     value("toggler")
    }
 	insert_top("h2", class: "_menuTitle", "Footer Menu"){
+  insert("span", class: "menu-collapse")
 	attribute("data-ur-toggler-component") {
     value("button")
    }
@@ -22,17 +23,27 @@ $("./body") {
    value("toggler")
    }
    $("./p[1]"){
+   insert("span", class: "menu-collapse")
    attribute("data-ur-toggler-component") {
     value("button")
    }
+   name() {
+    set("h3")
+  }
    add_class('_subFootMenu')
    }
 
-   $("./p[2]"){
-   attribute("data-ur-toggler-component") {
+   $("./p[1]"){
+      name(){
+      set("h4")
+      }
+      attribute("data-ur-toggler-component") {
     value("content")
    }
-   
+
+   $("./a"){
+   insert("span", class: "arrows-right_white_b")
+   }
    }
    }
    }
