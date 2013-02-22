@@ -1,3 +1,50 @@
 header._header {
-  
+
+._top{
+	@include background(linear-gradient($medium_gray, $light_gray, $medium_gray));
+	padding:10px 0 0;
+._logo{
+	margin-left:5px;
+}
+._eyeGlass{
+	float:right;
+	height:20px;
+	width:20px;
+	padding:10px;
+	@include background(linear-gradient($red, $dark_red));
+	border-radius:5px;
+	margin-right:10px;
+}	
+}
+._search{
+
+@include background(linear-gradient($white 25%, $light_gray 50%));
+padding:5px;
+
+._searchWrapper{
+width:200px;
+margin:0 auto;
+position:relative;
+
+
+}
+.placeholder{
+width:190px;
+height:32px;
+border-radius:5px;
+}
+.SearchBtn{
+@include button;
+@include background(linear-gradient($red, $dark_red));	
+height: 34px;
+padding: 0;
+border:none;
+color:$white;
+position: absolute;
+right: 7px;
+top: 3px;
+width: 42px;
+border-radius:5px;
+}
+}
 }

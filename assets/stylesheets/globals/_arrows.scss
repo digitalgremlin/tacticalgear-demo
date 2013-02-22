@@ -1,0 +1,72 @@
+$arrows-url: url("/_moovweb_local_assets_/images/arrows.png");
+
+$arrows-width: 23px;
+$arrows-height: 51px;
+
+$arrows-left_blue_m-x: 0px;
+$arrows-left_blue_m-y: 0px;
+$arrows-left_blue_m-width: 6px;
+$arrows-left_blue_m-height: 11px;
+
+$arrows-right_blue_m-x: 0px;
+$arrows-right_blue_m-y: -12px;
+$arrows-right_blue_m-width: 6px;
+$arrows-right_blue_m-height: 11px;
+
+$arrows-right_white_b-x: 0px;
+$arrows-right_white_b-y: -24px;
+$arrows-right_white_b-width: 23px;
+$arrows-right_white_b-height: 13px;
+
+$arrows-right_white_m-x: 0px;
+$arrows-right_white_m-y: -38px;
+$arrows-right_white_m-width: 23px;
+$arrows-right_white_m-height: 13px;
+
+@mixin arrows-left_blue_m() {
+  background: url("/_moovweb_local_assets_/images/arrows.png") no-repeat 0px 0px;
+  width: 6px;
+  height: 11px;
+}
+
+@mixin arrows-right_blue_m() {
+  background: url("/_moovweb_local_assets_/images/arrows.png") no-repeat 0px -12px;
+  width: 6px;
+  height: 11px;
+}
+
+@mixin arrows-right_white_b() {
+  background: url("/_moovweb_local_assets_/images/arrows.png") no-repeat 0px -24px;
+  width: 23px;
+  height: 13px;
+}
+
+@mixin arrows-right_white_m() {
+  background: url("/_moovweb_local_assets_/images/arrows.png") no-repeat 0px -38px;
+  width: 23px;
+  height: 13px;
+}
+
+.arrows-left_blue_m {
+  background: url("/_moovweb_local_assets_/images/arrows.png") no-repeat 0px 0px;
+  width: 6px;
+  height: 11px;
+}
+
+.arrows-right_blue_m {
+  background: url("/_moovweb_local_assets_/images/arrows.png") no-repeat 0px -12px;
+  width: 6px;
+  height: 11px;
+}
+
+.arrows-right_white_b {
+  background: url("/_moovweb_local_assets_/images/arrows.png") no-repeat 0px -24px;
+  width: 23px;
+  height: 13px;
+}
+
+.arrows-right_white_m {
+  background: url("/_moovweb_local_assets_/images/arrows.png") no-repeat 0px -38px;
+  width: 23px;
+  height: 13px;
+}

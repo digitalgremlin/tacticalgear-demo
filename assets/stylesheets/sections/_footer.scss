@@ -1,3 +1,21 @@
 footer._footer {
 
+
+	._menuContainer h2{
+	@include background(linear-gradient($gray, $medium_gray));
+	padding:10px;
+	
+	}
+
+	._subFootMenu{
+	@include background(linear-gradient($white, $light_gray));
+	padding:10px; }
+
+	._subFootMenu + p a{
+	@include bg-blue-gray;
+	padding:5px;
+	margin:0px;
+	display:block;
+	}
+	
 }

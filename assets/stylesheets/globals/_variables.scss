@@ -1,3 +1,212 @@
+// General Colors
+$light_gray: #e4e4e4;
+$gray: #cacaca;
+$white: #ffffff;
+$blue_gray: #e4e7ec;
+$gray2: #f2f2f2;
+$red: #c70000;
+$dark_red: #920202;
+$medium_gray: #7d7d7d;
+$dark_gray: #6a6a6a;
+$dark_blue: #004b91;
+$dark_orange: #cc6600;
+
+// Border colors
+$border_light_gray: darken($light_gray, 5%);
+$border_gray: darken($gray, 5%);
+$border_gray2: darken($gray2, 5%);
+$border_blue_gray: darken($blue_gray, 5%);
+$border_red: darken($red, 8%);
+$border_dark_red: darken($dark_red, 10%);
+$border_medium_gray: darken($medium_gray, 10%);
+$border_dark_gray: darken($dark_gray, 10%);
+$border_dark_orange: darken($dark_orange, 10%);
+$border_dark_blue: darken($dark_blue, 10%);
+
+// Titles
+
+@mixin titles {
+	@include box-sizing(border-box);
+	width: 100%;
+	font-weight: bold;
+	color: $dark_orange;
+}
+
+@mixin title-h1 {
+	@include titles;
+	font-size: 16px;
+	color: $dark_orange;
+}
+
+@mixin title-h2 {
+	@include titles;
+	font-size: 14px;
+}
+
+// Flat Backgrounds
+
+@mixin bg-light-gray {
+	background: $light_gray;
+	border: 1px solid $border_light_gray;
+	border-width: 1px 0;
+}
+
+@mixin bg-gray {
+	background: $gray;
+	border: 1px solid $border_gray;
+	border-width: 1px 0;
+}
+
+@mixin bg-gray2 {
+	background: $gray2;
+	border: 1px solid $border_gray2;
+	border-width: 1px 0;
+}
+
+@mixin bg-blue-gray {
+	background: $blue_gray;
+	border: 1px solid $border_blue_gray;
+	border-width: 1px 0;
+}
+
+@mixin bg-red {
+	background: $red;
+	border: 1px solid $red;
+	border-width: 1px 0;
+}
+
+@mixin bg-dark-red {
+	background: $dark_red;
+	border: 1px solid $border_red;
+	border-width: 1px 0;
+}
+
+@mixin bg-medium-gray {
+	background: $medium_gray;
+	border: 1px solid $border_medium_gray;
+	border-width: 1px 0;
+}
+
+@mixin bg-dark-gray {
+	background: $dark_gray;
+	border: 1px solid $border_dark_gray;
+	border-width: 1px 0;
+}
+
+@mixin bg-dark-blue {
+	background: $dark_blue;
+	border: 1px solid $border_dark_blue;
+	border-width: 1px 0;
+}
+
+// General Mixins
+
+@mixin full-width {
+	@include box-sizing(border-box);
+	width: 100%;
+}
+
+// Menu Buttons
+
+@mixin button {
+	@include box(horizontal, start, center);
+	@include box-sizing(border-box);
+	width: 100%;
+	height: 40px;
+	padding: 0 15px;
+	font-weight: bold;
+}
+
+@mixin menu-title {
+	@include button;
+	@include bg-medium-gray;
+	height: 30px;
+	box-shadow: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+@mixin menu-collapse {
+	@include button;
+	@include bg-dark-gray;
+	padding-left: 40px;
+	background: image-url("menu/collapse.png") no-repeat 13px 9px $dark_gray;
+	border-width: 0 0 1px 0;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08) inset;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+@mixin menu-contract {
+	@include menu-collapse;
+	background: image-url("menu/contract.png") no-repeat 13px 9px $dark_gray;
+}
+
+@mixin menu-collapse-2 {
+	@include menu-collapse;
+	@include bg-medium-gray;
+	background: image-url("menu/collapse_2.png") no-repeat 13px 9px $medium_gray;
+	border-width: 0 0 1px 0;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.12) inset;
+}
+
+@mixin menu-contract-2 {
+	@include menu-collapse-2;
+	background: image-url("menu/contract_2.png") no-repeat 13px 9px $medium_gray;
+}
+
+@mixin menu-collapse-3 {
+	@include menu-collapse;
+	@include bg-medium-blue;
+	background: image-url("menu/collapse_3.png") no-repeat 13px 9px #6ba1c5;
+	border-bottom: 1px solid darken($medium_gray, 5%);
+	border-width: 0 0 1px 0;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset;
+}
+
+@mixin menu-contract-3 {
+	@include menu-collapse-3;
+	background: image-url("menu/contract_3.png") no-repeat 13px 9px #6ba1c5;
+}
+
+@mixin menu-link {
+	@include button;
+	@include bg-blue-gray;
+	background: image-url("menu/arrow_right_blue_s.png") no-repeat center right content-box;
+	border: 1px solid darken($blue_gray, 10%);
+	border-width: 0 0 1px 0;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+	font-size: 13px;
+	font-weight: normal;
+	color: $dark_blue;
+}
+
+@mixin menu-link-2 {
+	@include menu-link;
+	@include bg-light-gray;
+	border: 1px solid #ddd;
+	border-width: 0 0 1px 0;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 1) inset;
+	color: #444;
+}
+
+@mixin button-blue {
+	@include button;
+	@include bg-dark-blue;
+	padding: 0 15px;
+	background: image-url("arrows/right_white_m.png") no-repeat center right $dark_blue;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.08) inset;
+	border-radius: 5px;
+	border-width: 1px 1px 1px 1px;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
 
 // Vertical Rhythm
 $base-font-size: 13px;
