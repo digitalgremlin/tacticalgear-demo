@@ -12,6 +12,23 @@ footer._footer {
 	margin-right:5px;
 	}	
 	}
+	._emailSocialBox {
+	margin:2px;
+	padding:0 5px;
+	@include bg-light-gray;
+	> p{
+	line-height:12px;
+	margin:0px;
+	}
+	}
+	.EmailInput form{
+	padding-top:10px;
+	> input:first-of-type{
+	height:25px;
+	box-radius:5px;
+	float:left;
+	}
+	}	
 
 	._subFootMenu{
 	@include bg-gray;
