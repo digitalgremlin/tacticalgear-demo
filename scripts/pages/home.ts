@@ -12,17 +12,25 @@ insert_top("div", class: "_navigation"){
 	copy_here("//div[@id='Info']")
 	$("./div"){
 	attributes(class: "_category", data-ur-set: "toggler")
+
 	$("./div[1]"){
 	attributes(data-ur-toggler-component: "button")
+	$("./p"){
+		insert("span", class: "menu-collapse")
+	}
 	}
 	$("./ul"){
 	attribute("data-ur-toggler-component", "content")
 	}
 	$("./ul/li"){
 	attributes(class: "_subCategory", data-ur-set: "toggler")
-	remove("@style")	
+	remove("@style")
+	$(".//a"){
+	insert("span", class: "arrows-right_blue_m")
+	}	
 	$(".//p"){
 	attributes(data-ur-toggler-component: "button")
+	insert("span", class: "menu-collapse")
 	}
 	$(".//ul"){
 	attributes(data-ur-toggler-component: "content")
@@ -50,6 +58,7 @@ insert_top("div", class: "_navigation"){
 	copy_here("./li/a",position("top"))
 	copy_here("//a[contains(concat(' ', @class, ' '), ' ThemeLink ')]", position())
 	$("./a"){
+	insert("span", class: "arrows-right_white_b")
 	wrap("li")
 	}
 	$("./li[contains(concat(' ', @class, ' '), ' _temp ')]"){

@@ -12,6 +12,7 @@ $dark_blue: #004b91;
 $dark_orange: #cc6600;
 
 // Border colors
+$border_white: darken($white, 5%);
 $border_light_gray: darken($light_gray, 5%);
 $border_gray: darken($gray, 5%);
 $border_gray2: darken($gray2, 5%);
@@ -96,6 +97,11 @@ $border_dark_blue: darken($dark_blue, 10%);
 @mixin bg-dark-blue {
 	background: $dark_blue;
 	border: 1px solid $border_dark_blue;
+	border-width: 1px 0;
+}
+@mixin bg-white {
+	background: $white;
+	border: 1px solid $border_white;
 	border-width: 1px 0;
 }
 
