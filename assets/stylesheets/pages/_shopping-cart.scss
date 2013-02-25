@@ -1,4 +1,4 @@
-._blackhawk {
+._cart {
 .menu-collapse{
 	float:right;
 	display:inline;
@@ -75,6 +75,22 @@ ul, li, p{
 
 .PDBrandDesc img{
   display:block;
+}
+
+.BodyContent > a {
+text-align:center;
+color:#fff;
+> h2{
+ @include background(linear-gradient($red, $dark_red)); 
+ margin:0px;
+ padding:10px;
+
+}
+
+
+  > img{
+  display:none;
+}
 }
   ._category > div > p{
   @include bg-black;

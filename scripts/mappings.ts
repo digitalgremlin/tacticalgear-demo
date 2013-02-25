@@ -30,6 +30,10 @@ match($status) {
         log("--> Importing pages/blackhawk-hawkhook-serrated-edge-knife.ts in mappings.ts")
         @import pages/blackhawk-hawkhook-serrated-edge-knife.ts
       }
+      with(/shopping-cart/) {
+        log("--> Importing pages/shopping-cart.ts in mappings.ts")
+        @import pages/shopping-cart.ts
+      }
       else() {
         log("--> No page match in mappings.ts")
       }

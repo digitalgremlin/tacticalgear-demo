@@ -1,5 +1,5 @@
 $("./body") {
-add_class('_blackhawk')
+add_class('_cart')
 remove(".//br")
 table_dump(".//table")
 $(".//div[contains(concat(' ', @class, ' '), ' BodyContent ')]"){
@@ -123,9 +123,7 @@ $("//div[contains(concat(' ', @class, ' '), ' LC3 ')]"){
 $("//div[contains(concat(' ', @class, ' '), ' OverFlow ')]"){
 	remove()
 }
-$("//div[contains(concat(' ', @class, ' '), ' ErrorBx1 ')]"){
-	remove()
-}
+
 $("//div[@id='outerDiv']/div[4]"){
 	remove()
 }
@@ -139,4 +137,8 @@ $("//div[contains(concat(' ', @class, ' '), ' recentlyViewedHolder ')]"){
 $("//div[@id='HelpWindow']"){
 	remove()
 }
+$(".//div[contains(concat(' ', @class, ' '), ' BodyContent ')]/a"){
+insert("h2", "Continue Shopping")
+}
+
 }
