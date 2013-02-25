@@ -42,8 +42,14 @@ ul, li, p{
   font-size: 18px;
   color:#fff;
   cursor:pointer;
+  padding:15px 0;
+  text-align:center;
+  display:block;
   
   }
+}
+.CartButtons > div > div > div:first-of-type{
+  padding:0px
 }
 #reviewsTop{
   
