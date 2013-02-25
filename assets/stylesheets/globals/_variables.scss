@@ -10,9 +10,11 @@ $medium_gray: #7d7d7d;
 $dark_gray: #6a6a6a;
 $dark_blue: #004b91;
 $dark_orange: #cc6600;
+$black: #000000;
 
 // Border colors
 $border_white: darken($white, 5%);
+$border_black: lighten($black, 20%);
 $border_light_gray: darken($light_gray, 5%);
 $border_gray: darken($gray, 5%);
 $border_gray2: darken($gray2, 5%);
@@ -102,6 +104,11 @@ $border_dark_blue: darken($dark_blue, 10%);
 @mixin bg-white {
 	background: $white;
 	border: 1px solid $border_white;
+	border-width: 1px 0;
+}
+@mixin bg-black {
+	background: $black;
+	border: 1px solid $border_black;
 	border-width: 1px 0;
 }
 

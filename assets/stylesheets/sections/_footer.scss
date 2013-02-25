@@ -2,7 +2,7 @@ footer._footer {
 
 
 	._menuContainer h2{
-	@include bg-medium-gray;
+	@include background(linear-gradient($medium_gray, $light_gray, $medium_gray));
 	padding:10px;
 	margin:0px;
 	color:$dark_orange;

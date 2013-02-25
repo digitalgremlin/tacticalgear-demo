@@ -12,8 +12,37 @@ ul, li, p{
 	padding:0px;
 	margin:0px;
 }
+
+#mw_heroSlider{
+  height: auto;
+  position: relative;
+  max-width: 480px;
+  overflow: hidden;
+  margin:0 auto;
+  z-index: 1;
+
+  div[data-ur-carousel-component="dots"]{
+  position: absolute;
+  bottom: 2px;  
+  left:217px;
+  z-index:5;
+  pointer-events: none;
+
+  }
+  div[data-ur-carousel-component="scroll_container"]{
+  position:relative;
+  width:480px;
+  }
+
+  div[data-ur-carousel-component="scroll_container"] > * {
+  display: inline-block;
+  float: left;
+  height:auto;
+
+}
+}
   ._category > div > p{
-  @include bg-dark-red;
+  @include bg-black;
   margin:0px;
   padding:5px;
   color:#fff;
@@ -25,14 +54,14 @@ ul, li, p{
 
    p{
   margin:0px;
-  @include bg-gray;
+  @include bg-dark-gray;
   padding:5px;
-  color:$dark_gray;
+  color:$dark_orange;
   }
   a {
   display:block;
   padding:5px;
-  @include bg-white;
+  @include bg-light-gray;
   }
   > ul > li{
   @include bg-light-gray;
@@ -46,10 +75,11 @@ ul, li, p{
    margin:0px;
 
    > li {
-  @include bg-light-gray;
+  @include bg-dark-gray;
   padding:5px;
   > a {
   display:block;
+  color:$white;
   }
   }
   }

@@ -67,9 +67,18 @@ insert_top("div", class: "_navigation"){
 	}
 	}
 	}	
-	}
+	}	
 
 }
+insert_top("div", id: "mw_heroSlider", data-ur-state: "enabled", data-ur-autoscroll: "enabled", data-ur-infinite: "enabled", data-ur-android3d: "enabled", data-ur-id: "home", data-ur-autoscroll-delay: "4000", data-ur-fill: "1", data-ur-carousel-component: "view_container", data-ur-set: "carousel", data-ur-vertical-scroll: "enabled", data-ur-touch: "enabled", data-ur-center: "disabled", data-ur-clones: "1", data-ur-auto-dir: "next"){
+	insert("div", data-ur-carousel-component: "dots")
+	insert("div", data-ur-carousel-component: "scroll_container"){
+	insert("img", src: asset("images/tg_hero01.jpg"), data-ur-carousel-component: "item", alt: "1")
+	insert("img", src: asset("images/tg_hero02.jpg"), data-ur-carousel-component: "item", alt: "2")
+	insert("img", src: asset("images/tg_hero03.jpg"), data-ur-carousel-component: "item", alt: "3")
+	insert("img", src: asset("images/tg_hero04.jpg"), data-ur-carousel-component: "item", alt: "4")
+	}
+	}
 }
 $("//header/div[last()]"){
 	remove()
