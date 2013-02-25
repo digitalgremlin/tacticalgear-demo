@@ -22,6 +22,14 @@ match($status) {
         log("--> Importing pages/home.ts in mappings.ts")
         @import pages/home.ts
       }
+      with(/knives-and-tools/) {
+        log("--> Importing pages/knives-and-tools.ts in mappings.ts")
+        @import pages/knives-and-tools.ts
+      }
+      with(/blackhawk-hawkhook-serrated-edge-knife/) {
+        log("--> Importing pages/blackhawk-hawkhook-serrated-edge-knife.ts in mappings.ts")
+        @import pages/blackhawk-hawkhook-serrated-edge-knife.ts
+      }
       else() {
         log("--> No page match in mappings.ts")
       }
