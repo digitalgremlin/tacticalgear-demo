@@ -101,12 +101,23 @@ text(){
 }
 
   }
+  $("//div[contains(concat(' ', @class, ' '), ' CartButtons ')]/div/div"){
+  insert_top("div", class: "_submit"){
+  move_here("//div[contains(concat(' ', @class, ' '), ' CartButtons ')]/div/div/div[2]/input")
+  }
+  $("./div[2]"){
+  remove()
+  }
+  }
   $("//div[contains(concat(' ', @class, ' '), ' CartButtons ')]/div/div/div[1]/input"){
 attribute("src") {
     value(" ")
   }
   attribute("value") {
     value("Add To Cart ")
+  }
+  attribute("type") {
+    value("submit")
   }
 
   }

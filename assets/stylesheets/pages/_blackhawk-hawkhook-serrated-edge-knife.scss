@@ -37,16 +37,21 @@ ul, li, p{
   color:#fff;
   display:block;
   }
-  > input{
+  > input[type="submit"]{
   font-weight:bold;
   font-size: 18px;
   color:#fff;
   cursor:pointer;
-  padding:5px 0 15px;
+  padding:20px;
   text-align:center;
   display:block;
+  width:100%;
+  border:none;
+  background:none;
+
   
   }
+
 }
 .CartButtons > div > div > div:first-of-type{
   padding:0px
