@@ -67,7 +67,7 @@ border-radius:5px;
 @include button;
 @include background(linear-gradient($red, $dark_red));	
 height: 34px;
-padding: 0;
+padding-left: 10px;
 border:none;
 color:$white;
 position: absolute;
