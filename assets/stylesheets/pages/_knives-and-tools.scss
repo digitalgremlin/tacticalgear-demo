@@ -57,10 +57,15 @@ ul, li, p{
   > span:first-of-type{
     display:block;
   }
+  > span:nth-of-type(2){
+    font-weight:bold;
+  }
+  > span:last-of-type{
+    font-weight:bold;
+  }
 
-  > span + span{
-  position:relative;
-  
+  > span + span + span{
+  color:$black;
 
 
   }
