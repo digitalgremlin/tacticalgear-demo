@@ -83,7 +83,7 @@ $("//div[contains(concat(' ', @class, ' '), ' Products ')]/ul/li"){
 	insert_after("div", class: "_clear")
 }
 insert_top("div", id: "mw_mainMenu", data-ur-set: "toggler"){
-	insert("h2", class: "_menuTitle", data-ur-toggler-component: "button", "Main Mneu")
+	insert("h2", class: "_menuTitle", data-ur-toggler-component: "button", "Main Menu")
 	insert("div", id: "mw_menuContainer", data-ur-toggler-component: "content"){
 	move_here("//div[contains(concat(' ', @class, ' '), ' _navigation ')]")
 	move_here("//div[contains(concat(' ', @class, ' '), ' _subnav ')]")
@@ -95,33 +95,29 @@ $(".//div[contains(concat(' ', @class, ' '), ' BodyContent ')]/div[5]"){
 move_to("//div[contains(concat(' ', @class, ' '), ' BreadCrumb ')]", position('after'))
 
 }
-$("//div[contains(concat(' ', @class, ' '), ' CartButtons ')]/div/div/div[2]/a"){
-text(){
-	set("Bulk Order Tool")
+
+  $("//div[contains(concat(' ', @class, ' '), ' PDThumb ')]"){
+  
+  move_here("//div[@id='outerDiv']", position('after')){
+  attribute("data-ur-set") {
+    value("toggler")
+  }
+  $("./div[3]"){
+  attribute("data-ur-toggler-component") {
+    value("content")
+  }
+  insert_before("h2", class: "_tabTitle", data-ur-toggler-component: "button", "Details"){
+  insert("span", class: "menu-collapse")
+  }
+  }
+  }
+  }
+$("//div[contains(concat(' ', @class, ' '), ' CartButtons ')]"){
+	$("./div/div/div[2]/a/img"){
+	insert_before("br")
+	
+	}
 }
-
-  }
-  $("//div[contains(concat(' ', @class, ' '), ' CartButtons ')]/div/div"){
-  insert_top("div", class: "_submit"){
-  move_here("//div[contains(concat(' ', @class, ' '), ' CartButtons ')]/div/div/div[2]/input")
-  }
-  $("./div[2]"){
-  remove()
-  }
-  }
-  $("//div[contains(concat(' ', @class, ' '), ' CartButtons ')]/div/div/div[1]/input"){
-attribute("src") {
-    value(" ")
-  }
-  attribute("value") {
-    value("Add To Cart ")
-  }
-  attribute("type") {
-    value("submit")
-  }
-
-  }
-
 $("//header/div[last()]"){
 	remove()
 }
@@ -149,5 +145,23 @@ $("//div[contains(concat(' ', @class, ' '), ' recentlyViewedHolder ')]"){
 
 $("//div[@id='HelpWindow']"){
 	remove()
+}
+$("//div[contains(concat(' ', @class, ' '), ' PDBrandDesc ')]"){
+wrap("div", data-ur-set: "toggler")
+attribute("data-ur-toggler-component"){
+	value("content")
+}
+insert_before("h2", class: "_tabTitle", data-ur-toggler-component: "button", "Description"){
+	insert("span", class: "menu-collapse")
+}
+}
+$("//div[@id='reviewsTop']"){
+wrap("div", data-ur-set: "toggler")
+attribute("data-ur-toggler-component"){
+	value("content")
+}
+insert_before("h2", class: "_tabTitle", data-ur-toggler-component: "button", "Reviews"){
+	insert("span", class: "menu-collapse")
+}
 }
 }

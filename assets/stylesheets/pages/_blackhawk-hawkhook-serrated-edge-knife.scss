@@ -25,36 +25,41 @@ ul, li, p{
   padding:2px 0;
 
 }
+
+
+.Options > div > div {
+  margin:5px 0;
+ > div{
+  display:inline;
+}
+}
 .CartButtons > div > div > div{
-  padding:15px 0;
+  
   text-align:center !important;
-  @include background(linear-gradient($red, $dark_red));
-  font-weight:bold;
-  font-size: 18px;
-  color:#fff;
+  display:inline;  
+  color:$dark_orange;
   margin:5px;
   > a{
-  color:#fff;
-  display:block;
-  }
-  > input[type="submit"]{
-  font-weight:bold;
-  font-size: 18px;
-  color:#fff;
-  cursor:pointer;
-  padding:20px;
+  color:$dark_orange;
+  display:inline;
+  font-size:12px;
   text-align:center;
-  display:block;
-  width:100%;
-  border:none;
-  background:none;
-
+  padding-left:25px;
+  }
+  > input[type="image"]{  
+  margin-top: 18px ;
+  margin-right:10px;
   
+  }
+  > div{
+  display:inline;
   }
 
 }
 .CartButtons > div > div > div:first-of-type{
-  padding:0px
+  padding-top:0;
+  float:left;
+  
 }
 #reviewsTop{
   
@@ -77,12 +82,17 @@ ul, li, p{
   }
   }
 }
-
+._tabTitle{
+  @include bg-dark-gray;
+  margin:0px;
+  padding:10px;
+  color:$black;
+}
 .PDBrandDesc img{
   display:block;
 }
-  ._category > div > p{
-  @include bg-black;
+ ._category > div > p{
+  @include background(linear-gradient($medium_gray, $dark_gray));
   margin:0px;
   padding:5px;
   color:#fff;
@@ -94,21 +104,25 @@ ul, li, p{
 
    p{
   margin:0px;
-  @include bg-dark-gray;
+  @include bg-dark-blue;
   padding:5px;
-  color:$dark_orange;
+  color:$white;
   }
   a {
   display:block;
   padding:5px;
   @include bg-light-gray;
+  border:none;
+  color:$black;
   }
   > ul > li{
   @include bg-light-gray;
+  border:none;
   }
   }
   ._category2{
   margin:0px;
+  display:none;
    > ul {
    list-style:none;
    padding:0px;
@@ -123,5 +137,28 @@ ul, li, p{
   }
   }
   }
+  }
+  .ThemeColor{
+  color:$dark_orange;
+  font-weight:bold;
+  padding:5px;
+  }
+  .Thumb{
+  @include background(linear-gradient($white, $light_gray));
+  padding:5px;
+
+   > li{
+  display:inline;
+  margin:10px;
+  > img{
+  border-radius:5px;
+  border:1px solid $light_gray;
+  }
+  }
+  }
+  .PDThumb > div > p{
+  @include background(linear-gradient($white, $light_gray));
+  border-bottom:1px solid $medium_gray;
+
   }
 }

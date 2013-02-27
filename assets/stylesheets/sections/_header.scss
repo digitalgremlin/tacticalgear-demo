@@ -2,7 +2,7 @@ header._header {
 
 ._top{
 	@include background(linear-gradient($medium_gray, $light_gray, $medium_gray));
-	padding:10px 0 0;
+	padding:10px 0 5px;
 ._logo{
 	margin-left:5px;
 }
@@ -10,7 +10,7 @@ header._header {
 	float:right;
 	height:20px;
 	width:20px;
-	padding:10px;
+	padding:2px;
 	@include background(linear-gradient($red, $dark_red));
 	border-radius:5px;
 	margin-right:10px;
@@ -19,7 +19,7 @@ header._header {
 	float:right;
 	height:20px;
 	width:20px;
-	padding:10px;
+	padding:2px;
 	@include background(linear-gradient($red, $dark_red));
 	border-radius:5px;
 	margin-right:10px;
@@ -39,7 +39,7 @@ color:#fff;
 	text-align:center;
 	@include background(linear-gradient($red, $dark_red));
 	border-radius:5px;
-	width:15%;
+	width:250px;
 	padding:5px;
 
 }
@@ -52,7 +52,7 @@ height:40px;
 
 ._searchWrapper{
 width:200px;
-margin:0 auto;
+margin:0 5px 0 0;
 position:relative;
 
 

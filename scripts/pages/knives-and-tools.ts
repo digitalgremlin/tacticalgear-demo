@@ -83,7 +83,7 @@ $("//div[contains(concat(' ', @class, ' '), ' Products ')]/ul/li"){
 	insert_after("div", class: "_clear")
 }
 insert_top("div", id: "mw_mainMenu", data-ur-set: "toggler"){
-	insert("h2", class: "_menuTitle", data-ur-toggler-component: "button", "Main Mneu")
+	insert("h2", class: "_menuTitle", data-ur-toggler-component: "button", "Main Menu")
 	insert("div", id: "mw_menuContainer", data-ur-toggler-component: "content"){
 	move_here("//div[contains(concat(' ', @class, ' '), ' _navigation ')]")
 	move_here("//div[contains(concat(' ', @class, ' '), ' _subnav ')]")

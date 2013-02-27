@@ -48,16 +48,18 @@ ul, li, p{
 
   > li{
   border-bottom:3px $black solid;
+  text-align:center;
 
   > a{
+  
 
   > span:first-of-type{
-  height:150px;
+    display:block;
   }
 
   > span + span{
   position:relative;
-  bottom:75px;
+  
 
 
   }
@@ -67,7 +69,7 @@ ul, li, p{
   }
 }
   ._category > div > p{
-  @include bg-black;
+  @include background(linear-gradient($medium_gray, $dark_gray));
   margin:0px;
   padding:5px;
   color:#fff;
@@ -79,21 +81,25 @@ ul, li, p{
 
    p{
   margin:0px;
-  @include bg-dark-gray;
+  @include bg-dark-blue;
   padding:5px;
-  color:$dark_orange;
+  color:$white;
   }
   a {
   display:block;
   padding:5px;
   @include bg-light-gray;
+  border:none;
+  color:$black;
   }
   > ul > li{
   @include bg-light-gray;
+  border:none;
   }
   }
   ._category2{
   margin:0px;
+  display:none;
    > ul {
    list-style:none;
    padding:0px;
