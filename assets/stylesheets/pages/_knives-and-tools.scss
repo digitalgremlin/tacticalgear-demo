@@ -125,4 +125,7 @@ ul, li, p{
   @include background(linear-gradient($white, $light_gray));
   border-bottom:3px solid $black;
   }
+  .ThemeColor{
+  color:$dark_orange;
+  }
 }
