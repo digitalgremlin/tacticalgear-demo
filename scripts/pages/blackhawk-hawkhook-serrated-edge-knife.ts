@@ -5,6 +5,11 @@ table_dump(".//table")
 $(".//div[contains(concat(' ', @class, ' '), ' BodyContent ')]"){
 
 insert_top("div", class: "_navigation"){
+	insert("div", id: "_ShopAll"){
+	insert("div"){
+	insert("p", "SHOPALL")
+	}
+	}
 	copy_here("//div[@id='Clothing']")
 	copy_here("//div[@id='Footwear']")
 	copy_here("//div[@id='Hardware']")
@@ -118,33 +123,33 @@ $("//div[contains(concat(' ', @class, ' '), ' CartButtons ')]"){
 	
 	}
 }
-$("//header/div[last()]"){
-	remove()
+$("//header/div[4]"){
+	add_class("_hidden")
 }
 $("//header/div[last()]"){
-	remove()
+	add_class("_hidden")
 }
 $("//div[contains(concat(' ', @class, ' '), ' LC3 ')]"){
-	remove()
+	add_class("_hidden")
 }
 $("//div[contains(concat(' ', @class, ' '), ' OverFlow ')]"){
-	remove()
+	add_class("_hidden")
 }
 $("//div[contains(concat(' ', @class, ' '), ' ErrorBx1 ')]"){
-	remove()
+	add_class("_hidden")
 }
 $("//div[@id='outerDiv']/div[4]"){
-	remove()
+	add_class("_hidden")
 }
 $("//div[contains(concat(' ', @class, ' '), ' Clear ')]"){
-	remove()
+	add_class("_hidden")
 }
 $("//div[contains(concat(' ', @class, ' '), ' recentlyViewedHolder ')]"){
-	remove()
+	add_class("_hidden")
 }
 
 $("//div[@id='HelpWindow']"){
-	remove()
+	add_class("_hidden")
 }
 $("//div[contains(concat(' ', @class, ' '), ' PDBrandDesc ')]"){
 wrap("div", data-ur-set: "toggler")

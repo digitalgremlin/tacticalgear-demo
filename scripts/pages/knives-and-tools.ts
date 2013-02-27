@@ -5,6 +5,11 @@ table_dump(".//table")
 $(".//div[contains(concat(' ', @class, ' '), ' BodyContent ')]"){
 
 insert_top("div", class: "_navigation"){
+	insert("div", id: "_ShopAll"){
+	insert("div"){
+	insert("p", "SHOPALL")
+	}
+	}
 	copy_here("//div[@id='Clothing']")
 	copy_here("//div[@id='Footwear']")
 	copy_here("//div[@id='Hardware']")

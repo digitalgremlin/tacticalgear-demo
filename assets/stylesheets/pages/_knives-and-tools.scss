@@ -25,6 +25,7 @@ ul, li, p{
   padding:2px 0;
 
 }
+
 .Pagination {
   display:block;
 
@@ -114,5 +115,9 @@ ul, li, p{
   }
   }
   }
+  }
+  .BreadCrumb{
+  @include background(linear-gradient($white, $light_gray));
+  border-bottom:3px solid $black;
   }
 }

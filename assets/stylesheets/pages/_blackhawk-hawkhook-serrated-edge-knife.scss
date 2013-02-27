@@ -28,10 +28,15 @@ ul, li, p{
 
 
 .Options > div > div {
-  margin:5px 0;
+  margin:10px 0;
  > div{
   display:inline;
 }
+}
+.Options select{
+  width:150px;
+  border-radius:5px;
+  height:25px;
 }
 .CartButtons > div > div > div{
   
@@ -44,7 +49,10 @@ ul, li, p{
   display:inline;
   font-size:12px;
   text-align:center;
-  padding-left:25px;
+  padding-left:30px;
+  > img{
+  margin-left:5px;
+  }
   }
   > input[type="image"]{  
   margin-top: 18px ;
@@ -143,6 +151,10 @@ ul, li, p{
   font-weight:bold;
   padding:5px;
   }
+  .Title h2{
+  @include background(linear-gradient($white, $light_gray));
+    border-bottom:1px solid $medium_gray;
+  }
   .Thumb{
   @include background(linear-gradient($white, $light_gray));
   padding:5px;
@@ -160,5 +172,11 @@ ul, li, p{
   @include background(linear-gradient($white, $light_gray));
   border-bottom:1px solid $medium_gray;
 
+  }
+  .BrandImg .Padding5 {
+  @include background(linear-gradient($white, $light_gray));
+  }
+  .BreadCrumb{
+  @include background(linear-gradient($white, $light_gray));
   }
 }

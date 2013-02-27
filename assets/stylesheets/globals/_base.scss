@@ -37,7 +37,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 ._hidden{
-  display:none;
+  display:none !important;
 }
 ._clear{
   clear:both;
