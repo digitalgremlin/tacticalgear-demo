@@ -120,7 +120,6 @@ ul, li, p{
   display:block;
   padding:5px;
   @include bg-light-gray;
-  border:none;
   color:$black;
   }
   > ul > li{
